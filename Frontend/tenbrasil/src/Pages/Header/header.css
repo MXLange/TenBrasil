@@ -1,0 +1,57 @@
+header {
+    width: 100%;
+    background-color: var(--blue);
+}
+
+#header-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+h1 {
+    color: var(--yellow);
+    text-align: center;
+    font-size: 4rem;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+
+h1 span {
+    color: var(--green);
+}
+
+p {
+    text-align: center;
+    color: azure;
+    font-size: 2rem;
+    padding: 2rem;
+    margin-left: 10rem;
+}
+
+@media screen and (max-width: 1300px) {
+    p {
+        margin-left: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #header-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 715px) {
+    h1, p {
+        margin-left: 2rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    h1, p {
+        margin-left: 1rem;
+    }
+    header {
+        width: 120%;
+    }
+}

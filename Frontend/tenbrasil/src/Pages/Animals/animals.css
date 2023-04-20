@@ -1,0 +1,180 @@
+body {
+    background-color: rgb(163, 195, 233);
+}
+
+#animal {
+    display: flex;
+    margin-top: 0.8rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#animal-form {
+    background-color: var(--yellow);
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 2rem;
+    width: 35rem;
+    height: 31rem;
+    padding: 3rem;
+    margin-left: 0.8rem;
+}
+
+.input-group .form-control, .input-group-text {
+    border-width: 1px;
+    border-style: ridge;
+    border-color: black;
+}
+
+.mb-3 {
+    margin-top: 1rem;
+}
+
+button {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#selecao {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+#formFile, .mb-3 .form-control, #select {
+    border-style: ridge;
+    border-color: black;
+}
+
+#change-button {
+    display: flex;
+    align-items: flex-end;
+    margin: 1rem;
+}
+
+#change-button button {
+    margin: 0.1rem;
+    border-radius: 1rem;
+}
+
+#carrousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    margin-left: 0.8rem;
+    margin-bottom: 3rem;
+}
+
+#carrousel .info {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 15rem;
+    word-wrap: break-word;
+}
+
+#carrousel .item {
+    background-color: var(--green);
+    padding: 0.3rem;
+    border-style: ridge;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 3rem;
+    width: 17rem;
+}
+
+#carrousel .item .image {
+    text-align: center;
+}
+
+#carrousel .item .image img {
+    border-radius: 3rem;
+    width: 16rem;
+    height: 16rem;
+}
+
+#filter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#filter .search {
+    margin-top: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+#filter button {
+    margin: 1rem;
+    width: 10rem;
+    margin-bottom: 1rem;
+}
+
+#filter input {
+    align-self: center;
+    margin-left: 1rem;
+    width: 40rem;
+}
+
+#edit-screen {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#edit-screen-content {
+    padding: 2rem;
+    width: 35rem;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 1000px) {
+    #carrousel {
+        margin-top: 0.5rem
+    }
+    #animal {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    #animal-form {
+        width: 30rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #animal-form {
+        width: 22rem;
+        margin-right: 3rem;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    #filter .search {
+        margin-top: 0;
+        display: grid;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        text-align: center;
+    }
+    #filter input{
+        width: 20rem;
+        margin-left: 2rem;
+    }
+    #filter button{
+        width: 20rem;
+        margin-left: 2rem;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+}
